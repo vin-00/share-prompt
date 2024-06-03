@@ -2,10 +2,22 @@
 
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from 'react'
 
 import Form from "@components/Form";
 
+
+const
+
 const UpdatePrompt = () => {
+  return (
+    <Suspense>
+      <Ask/>
+    </Suspense>
+  )
+};
+
+const Ask =()=>{
   const router = useRouter();
   const searchParams = useSearchParams();
   const promptId = searchParams.get("id");
@@ -60,7 +72,8 @@ const UpdatePrompt = () => {
       submitting={submitting}
       handleSubmit={updatePrompt}
     />
+      
   );
-};
+}
 
 export default UpdatePrompt;
