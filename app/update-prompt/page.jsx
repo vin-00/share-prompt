@@ -7,14 +7,6 @@ import { Suspense } from 'react'
 import Form from "@components/Form";
 
 const UpdatePrompt = () => {
-  return (
-    <Suspense>
-      <Ask/>
-    </Suspense>
-  )
-};
-
-const Ask =()=>{
   const router = useRouter();
   const searchParams = useSearchParams();
   const promptId = searchParams.get("id");
@@ -62,6 +54,7 @@ const Ask =()=>{
   };
 
   return (
+    <Suspense>
     <Form
       type='Edit'
       post={post}
@@ -69,8 +62,9 @@ const Ask =()=>{
       submitting={submitting}
       handleSubmit={updatePrompt}
     />
+      </Suspense>
       
   );
-}
+};
 
 export default UpdatePrompt;
