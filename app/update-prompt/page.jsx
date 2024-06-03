@@ -6,9 +6,6 @@ import { Suspense } from 'react'
 
 import Form from "@components/Form";
 
-
-const
-
 const UpdatePrompt = () => {
   return (
     <Suspense>
