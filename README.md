@@ -1,5 +1,5 @@
 # SharePrompt
-[Website](https://share-prompt-r1avkcf0q-vinays-projects-5b0b564c.vercel.app/)
+## [Website](https://share-prompt-r1avkcf0q-vinays-projects-5b0b564c.vercel.app/)
 
 ## Welcome to SharePrompt! This full-stack web application allows users to write and search various prompts. Users can sign in using their Google accounts. The application is built using Next.js for the frontend and backend.
 
